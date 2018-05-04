@@ -3,6 +3,9 @@ function sendCommand (cmd) {
 
   fetch('/move', {
     method: 'POST',
+    headers: {
+      'content-type': 'application/json'
+    },
     body: JSON.stringify({
       command: cmd
     })
