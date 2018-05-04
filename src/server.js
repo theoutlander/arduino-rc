@@ -15,6 +15,14 @@ app.post('/move', (req, res) => {
   })
 })
 
+app.post('/connect', (req, res) => {
+  // Your code to connect
+
+  res.send({
+    status: "Connection Successful"
+  })
+})
+
 app.listen(PORT, () => {
   console.log('Server is listening on port ', PORT)
 })

@@ -30,12 +30,27 @@ body {
     width: 100px;
     border: 1px solid black;
     border-radius: 90px;
-    background-color: red;
     justify-content: center;
     display: flex;
     align-items: center;
 }
 
+.red {
+    background-color: red;
+    cursor: pointer;
+}
+
+div.red:after {
+    content: "Connect"
+}
+
+.green {
+    background-color: green;
+}
+
+div.green:after {
+    content: "Connected"
+}
 .row {
     width: 300px;
     height: 100px;
@@ -49,8 +64,8 @@ body {
 }
 
 /*textarea {*/
-    /*scroll-behavior: auto;*/
-    /*margin-top: 20px;*/
+/*scroll-behavior: auto;*/
+/*margin-top: 20px;*/
 /*}*/
 
 img {
